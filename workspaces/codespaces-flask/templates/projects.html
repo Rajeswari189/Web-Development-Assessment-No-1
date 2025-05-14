@@ -1,0 +1,9 @@
+<h2>My Projects</h2>
+<ul>
+  {% for project in projects %}
+    <li>
+      <strong>{{ project.title }}</strong>: {{ project.description }}<br>
+      <a href="{{ project.link }}" target="_blank">View Project</a>
+    </li>
+  {% endfor %}
+</ul>
